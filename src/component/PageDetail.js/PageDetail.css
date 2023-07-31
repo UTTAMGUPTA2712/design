@@ -1,0 +1,28 @@
+#pagedetail {
+    font-family: RoobertNEW, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    & #data {
+        display: flex;
+        align-items: center;
+        max-width: 1450px;
+        width: 100%;
+        & #datadiv {
+            max-width: 550px;
+            width: 100%;
+            & img {
+                background-color: #000000;
+                padding: 0.4rem;
+                margin-bottom: 2rem;
+            }
+            & #pdata{
+                line-height: 1.4;
+            }
+        }
+    }
+}

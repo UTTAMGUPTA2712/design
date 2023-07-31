@@ -1,0 +1,47 @@
+#CarousalCard {
+    font-size: 16px;
+    display: flex;
+    max-width: 880px;
+    margin: 0.4rem;
+    & #img {
+        margin: 0;
+        height: 440px;
+        width:0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #CarousalCardData {
+        width: 440px;
+        font-family: RoobertNEW, sans-serif;
+        height: 440px;
+        & .divdata {
+            padding: 3rem 2.5rem;
+
+            & h2 {
+                font-weight: 500;
+            }
+            & p {
+                line-height: 1.5;
+                font-family: RoobertNEW, sans-serif;
+                font-size: 18px;
+            }
+        }
+    }
+    & .show {
+        position: relative;
+        transform: translateX(0);
+        z-index: -1;
+        width: 390px !important;
+        animation-duration: 5s;
+        transition: all 1s;
+    }
+    & .notShow {
+        position: relative;
+        z-index: -1;
+        transform: translateX(100%);
+        animation-duration: 5s;
+        transition: all 1s;
+    }
+}

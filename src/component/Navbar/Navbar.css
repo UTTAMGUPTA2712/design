@@ -1,0 +1,35 @@
+#Navbar {
+    background-color: white;
+    display: flex;
+    padding: 1px;
+    border-radius: 1px;
+    & button {
+        background-color: white;
+        border: 0;
+        padding:0 1.55rem;
+        font-family:  RoobertNEW, sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.2;
+        cursor: pointer;
+        &:hover {
+            transition: 800ms;
+            background-color: rgba(74, 29, 224, 0.123);
+        }
+    }
+
+    & #line {
+        width: 1px;
+        background-color: black;
+        margin: 0.5rem 2px;
+    }
+
+    & #btn {
+        padding:0 0.4rem;
+        background-image: url("https://assets.website-files.com/638dadf7b305caf85beed0d7/638dadf7b305cafaeeeed1a0_State%3Ddefault%2C%20color%3Dwhite.svg");
+        height: 60px;
+        width: 60px;
+        background-position: center;
+
+    }
+}

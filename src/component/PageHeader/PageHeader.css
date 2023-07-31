@@ -1,0 +1,111 @@
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
+#PageHeader {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: 2;
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+
+    & #myVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+    & #detail {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        height: 100%;
+        width: 100%;
+        max-width: 1250px;
+
+        & #header {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        & #homedetail {
+            padding: 3rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            & div {
+                display: inline-block;
+                line-height: 1.2;
+                max-width: 720px;
+
+                & div {
+                    background-color: black;
+                }
+
+                & h1 {
+                    font-family: Hanson, sans-serif;
+                    font-weight: 1000;
+                    font-size: 140px;
+                    letter-spacing: -0.06em;
+                    padding: 0;
+                    margin: 0.5rem;
+                    line-height: 0.9;
+                    text-transform: uppercase;
+                    background-image: url("../../asset/images/textbackgroung.jpg");
+                    background-size: 3500px;
+                    background-position: 50% 0;
+                    animation: gradient 40s ease infinite;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    -webkit-text-fill-color: transparent;
+                    animation: animatedBackground 20s linear infinite;
+                }
+            }
+
+            & #button {
+                padding: 1rem;
+                max-width: 400px;
+                font-size: 18px;
+                margin-top: 1rem;
+                background-color: black;
+
+                & #btn {
+                    padding: 1.5rem;
+                    font-size: 1rem;
+                    background-color: rgb(28, 28, 28);
+                    color: white;
+                    border: 0;
+                }
+
+                & div {
+                    background-color: white;
+                    margin: 0 0.5rem;
+                    width: 1px;
+                    color: white;
+                    height: 3rem;
+                }
+
+            }
+        }
+    }
+}
